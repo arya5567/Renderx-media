@@ -41,6 +41,6 @@ yarn-error.log*
 next-env.d.ts
 # videos and large media
 /videos
-*.mp4
 *.mov
 *.avi
+!public/homevdo.mp4

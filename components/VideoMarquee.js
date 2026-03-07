@@ -9,6 +9,8 @@ const videos = [
   "/CGI/Lrisa.mp4",
   "/CGI/lv 01.mp4",
   "/CGI/Megamart CGI video.mp4",
+  "https://www.youtube.com/embed/P3xqRgol2BA?autoplay=1&mute=1&loop=1&playlist=P3xqRgol2BA",
+
 ];
 
 export default function HomeCGIShowcase() {

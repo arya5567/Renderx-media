@@ -7,18 +7,15 @@ export default function HeroSection() {
     <section className="relative h-screen w-full bg-black text-white overflow-hidden">
 
       {/* Background Video */}
-     <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  className="absolute inset-0 w-full h-full object-cover scale-110"
->
-  <source
-    src="https://drive.google.com/uc?export=download&id=1cJ6jwVTeSV6F3XXJd1gTLMip3ZpdMtXn"
-    type="video/mp4"
-  />
-</video>
+      <video
+        autoPlay
+        loop
+        muted
+        playsInline
+        className="absolute inset-0 w-full h-full object-cover scale-110"
+      >
+        <source src="/homevdo.mp4" type="video/mp4" />
+      </video>
 
       {/* Dark overlay */}
       <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>

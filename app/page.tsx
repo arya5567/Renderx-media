@@ -6,7 +6,9 @@ import TrustedBy from "../components/TrustedBy";  // 👈 new import
 import Contact from "../components/Contact";      
 import Footer from "../components/Footer";
 import VideoMarquee from "@/components/VideoMarquee.js";
-
+import ProcessSection from "../components/process.js";
+import WhyChooseUs from "../components/whychooseus";
+import VisionSection from "../components/vision.js";
 export default function Home() {
   return (
     <main>
@@ -14,9 +16,13 @@ export default function Home() {
        <VideoMarquee/>
       <About />
       <Services />
-      <CTA />
-      <TrustedBy />   {/* 👈 new section */}
-      <Contact />     
+      <ProcessSection/>
+      
+      <TrustedBy />
+      <WhyChooseUs/> 
+      <VisionSection/> {/* 👈 new section */}
+      <Contact />    
+      <CTA /> 
       <Footer />
      
     </main>

@@ -4,77 +4,88 @@ import { motion } from "framer-motion";
 
 export default function HeroSection() {
   return (
-    <section className="relative h-screen w-full bg-black text-white overflow-hidden">
+    <section className="bg-black min-h-screen flex items-center justify-center px-6 py-6">
 
-      {/* Background Video */}
-      <video
-        autoPlay
-        loop
-        muted
-        playsInline
-        className="absolute inset-0 w-full h-full object-cover scale-110"
-      >
-        <source src="/homevdo.mp4" type="video/mp4" />
-      </video>
+      {/* HERO FRAME */}
+      <div className="relative w-full max-w-[1600px] h-[92vh] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
 
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
+        {/* Background Video */}
+        <video
+          src="/homevdo.mp4"
+          autoPlay
+          muted
+          loop
+          playsInline
+          className="absolute inset-0 w-full h-full object-cover"
+        />
 
-      {/* Bottom Content */}
-      <div className="absolute bottom-16 left-0 w-full px-8 md:px-16">
+        {/* Overlay */}
+        <div className="absolute inset-0 bg-black/60"></div>
 
-        <motion.div
-          initial={{ opacity: 0, y: 40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-          className="max-w-3xl"
-        >
+        {/* Grid Overlay */}
+        <div
+          className="absolute inset-0 opacity-[0.05]"
+          style={{
+            backgroundImage:
+              "linear-gradient(to right, white 1px, transparent 1px), linear-gradient(to bottom, white 1px, transparent 1px)",
+            backgroundSize: "70px 70px",
+            animation: "gridMove 35s linear infinite",
+          }}
+        />
 
-          {/* Minimal Headline */}
-          <h1 className="text-3xl md:text-5xl font-bold leading-tight">
-            Hyper-Real CGI & 3D Visuals
-          </h1>
+        {/* HERO CONTENT */}
+        <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
 
-          {/* Highlight Line */}
-          <h2 className="text-3xl md:text-5xl font-bold bg-gradient-to-r from-purple-400 to-pink-500 bg-clip-text text-transparent">
-            That Make Brands Unforgettable
-          </h2>
+          {/* Center Logo */}
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.8 }}
+            className="mb-6"
+          >
+            <div className="w-12 h-12 border border-white/30 rounded-lg flex items-center justify-center text-white font-bold">
+              RX
+            </div>
+          </motion.div>
 
-          {/* Small description */}
-          <p className="mt-4 text-gray-300 text-lg max-w-xl">
-            High-end product renders and cinematic visuals for modern brands.
-          </p>
+          {/* Headline */}
+          <motion.h1
+            initial={{ opacity: 0, y: 40 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.9 }}
+            className="text-white font-semibold text-4xl md:text-6xl lg:text-7xl leading-[1.05] tracking-[-0.02em] max-w-[1000px]"
+          >
+            High-Impact CGI
+            <br />
+            & Digital Campaigns
+          </motion.h1>
 
-          {/* Buttons */}
-          <div className="flex gap-4 mt-8">
+          {/* Badge */}
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            transition={{ delay: 0.6 }}
+            className="mt-8 px-5 py-2 border border-white/25 rounded-full text-white text-sm backdrop-blur-md"
+          >
+            Industry Results • 200M+ Views Generated
+          </motion.div>
 
-            <a
-              href="#contact"
-              className="px-7 py-3 rounded-full font-medium
-              bg-gradient-to-r from-purple-600 to-pink-600
-              hover:scale-105 transition"
-            >
-              Start Project
-            </a>
+        </div>
 
-            <a
-              href="#work"
-              className="px-7 py-3 rounded-full border border-white/30
-              hover:bg-white/10 transition"
-            >
-              View Work
-            </a>
-
-          </div>
-
-        </motion.div>
+        {/* Bottom Label */}
+        <div className="absolute bottom-6 left-0 right-0 flex justify-center text-white/70 text-sm">
+          Trusted by 150+ Global Enterprises
+        </div>
 
       </div>
 
-      {/* Scroll Indicator */}
-      <div className="absolute bottom-6 w-full flex justify-center text-gray-400 text-sm tracking-widest">
-        ↓ SCROLL
-      </div>
+      {/* Grid Animation */}
+      <style jsx>{`
+        @keyframes gridMove {
+          0% { background-position: 0 0; }
+          100% { background-position: 70px 70px; }
+        }
+      `}</style>
 
     </section>
   );

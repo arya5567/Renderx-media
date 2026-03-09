@@ -34,8 +34,8 @@ export default function Navbar() {
   const navItems = [
     { name: "Work", path: "/work" },
     { name: "Services", path: "/services" },
-    { name: "Process", path: "/process" },
-    { name: "Case Studies", path: "/case-studies" },
+    { name: "Process", path: "/Process" },
+    { name: "Case Studies", path: "/casestudy" },
     { name: "About", path: "/about" },
   ];
 

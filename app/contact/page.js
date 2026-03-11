@@ -15,42 +15,20 @@ export default function ContactPage() {
       {/* Contact Form + Info */}
       <div className="max-w-6xl mx-auto grid md:grid-cols-2 gap-12">
         
-        {/* Contact Form */}
-        <form className="bg-gray-900 p-8 rounded-xl shadow-lg space-y-6">
-          <div>
-            <label className="block text-sm font-medium mb-2">Name</label>
-            <input
-              type="text"
-              placeholder="Your Name"
-              className="w-full px-4 py-3 rounded-lg bg-black border border-white/10 text-white focus:border-purple-500 focus:outline-none"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-2">Email</label>
-            <input
-              type="email"
-              placeholder="Your Email"
-              className="w-full px-4 py-3 rounded-lg bg-black border border-white/10 text-white focus:border-purple-500 focus:outline-none"
-            />
-          </div>
-
-          <div>
-            <label className="block text-sm font-medium mb-2">Message</label>
-            <textarea
-              rows="5"
-              placeholder="Tell us about your project..."
-              className="w-full px-4 py-3 rounded-lg bg-black border border-white/10 text-white focus:border-purple-500 focus:outline-none"
-            ></textarea>
-          </div>
-
-          <button
-            type="submit"
-            className="w-full px-6 py-3 rounded-full bg-gradient-to-r from-purple-600 to-pink-600 text-white font-semibold hover:scale-105 transition"
+        {/* Google Form Embed */}
+        <div className="bg-gray-900 p-6 rounded-xl shadow-lg">
+          <iframe
+            src="https://docs.google.com/forms/d/e/1FAIpQLSfVA1RV6x-nWw6-bdMaAukxwogZErpgrkkWCYMLnmjLGas4EQ/viewform?embedded=true"
+            width="100%"
+            height="700"
+            frameBorder="0"
+            marginHeight="0"
+            marginWidth="0"
+            className="rounded-lg"
           >
-            Send Message
-          </button>
-        </form>
+            Loading…
+          </iframe>
+        </div>
 
         {/* Contact Info */}
         <div className="space-y-8">
@@ -75,8 +53,18 @@ export default function ContactPage() {
           <div>
             <h3 className="text-lg font-semibold mb-2">Follow Us</h3>
             <div className="flex gap-4">
-              <a href="https://www.instagram.com/rend.erxmedia?igsh=ODkzbWdiNnBvY2po" className="hover:text-purple-400 transition">Instagram</a>
-              <a href="https://www.linkedin.com/company/renderex-media/" className="hover:text-purple-400 transition">LinkedIn</a>
+              <a
+                href="https://www.instagram.com/rend.erxmedia?igsh=ODkzbWdiNnBvY2po"
+                className="hover:text-purple-400 transition"
+              >
+                Instagram
+              </a>
+              <a
+                href="https://www.linkedin.com/company/renderex-media/"
+                className="hover:text-purple-400 transition"
+              >
+                LinkedIn
+              </a>
             </div>
           </div>
         </div>

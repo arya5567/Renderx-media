@@ -2,15 +2,17 @@
 
 import { motion } from "framer-motion";
 
+
 const videos = [
-  "https://www.youtube.com/embed/kmrrEGrpmQg?autoplay=1&mute=1&loop=1&playlist=kmrrEGrpmQg",
-  "https://www.youtube.com/embed/8ls8GuVNFWc?autoplay=1&mute=1&loop=1&playlist=8ls8GuVNFWc",
-  "https://www.youtube.com/embed/lCMvqJq3iOA?autoplay=1&mute=1&loop=1&playlist=lCMvqJq3iOA",
-  "https://www.youtube.com/embed/IzHsX1TxsoE?autoplay=1&mute=1&loop=1&playlist=IzHsX1TxsoE",
-  "https://www.youtube.com/embed/ooZEojlwEtA?autoplay=1&mute=1&loop=1&playlist=ooZEojlwEtA",
-  "https://www.youtube.com/embed/hmLS_lUkEfI?autoplay=1&mute=1&loop=1&playlist=hmLS_lUkEfI",
-  "https://www.youtube.com/embed/UfS5GX8Ul2M?autoplay=1&mute=1&loop=1&playlist=UfS5GX8Ul2M"
+  "https://renderx.s3.eu-north-1.amazonaws.com/CGI/black+friday+video+(1).mp4",
+  "https://renderx.s3.eu-north-1.amazonaws.com/CGI/CGI+Advertisement.mp4",
+  "https://renderx.s3.eu-north-1.amazonaws.com/CGI/Comp+iphine.mp4",
+  "https://renderx.s3.eu-north-1.amazonaws.com/CGI/Comp-4.mp4",
+  "https://renderx.s3.eu-north-1.amazonaws.com/CGI/Cream+Bell+CGI.mp4",
+  "https://renderx.s3.eu-north-1.amazonaws.com/CGI/Fokusss.mp4",
+  "https://renderx.s3.eu-north-1.amazonaws.com/CGI/Lrisa.mp4"
 ];
+
 
 // duplicate videos for infinite loop
 const loopVideos = [...videos, ...videos];

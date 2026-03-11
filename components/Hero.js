@@ -10,15 +10,18 @@ export default function HeroSection() {
       <div className="relative w-full max-w-[1600px] h-[92vh] rounded-3xl overflow-hidden border border-white/10 shadow-2xl">
 
         {/* Background Video */}
-        <video
-          src="/homevdo.mp4"
-          autoPlay
-          muted
-          loop
-          playsInline
-          className="absolute inset-0 w-full h-full object-cover"
-        />
-
+  <video
+  src="https://renderx.s3.eu-north-1.amazonaws.com/homevdo.mp4"
+  autoPlay
+  muted
+  loop
+  playsInline
+  className="absolute inset-0 w-full h-full object-cover"
+  onEnded={(e) => {
+    e.target.currentTime = 0;
+    e.target.play();
+  }}
+/>
         {/* Overlay */}
         <div className="absolute inset-0 bg-black/60"></div>
 

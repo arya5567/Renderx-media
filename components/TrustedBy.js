@@ -11,7 +11,7 @@ export default function ClientsSection() {
     { name: "Hairsmart", logo: "/hairsmart.png" },
     { name: "Kalpinik AI", logo: "/kalpanik.png" },
     { name: "AAYCREATE", logo: "/aaycreate logo.png" },
-    { name: "CC Cabinet", logo: "/cclogoTransparent.png" },
+    { name: "CC Cabinet", logo: "/cclogoTransparent.PNG" },
     { name: "Larissa", logo: "/larisalogo.png" },
   ];
 

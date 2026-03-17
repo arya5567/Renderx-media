@@ -39,17 +39,7 @@ export default function HeroSection() {
         {/* HERO CONTENT */}
         <div className="relative z-10 h-full flex flex-col items-center justify-center text-center px-6">
 
-          {/* Center Logo */}
-          <motion.div
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.8 }}
-            className="mb-6"
-          >
-            <div className="w-12 h-12 border border-white/30 rounded-lg flex items-center justify-center text-white font-bold">
-              RX
-            </div>
-          </motion.div>
+          
 
           {/* Headline */}
           <motion.h1
@@ -70,14 +60,14 @@ export default function HeroSection() {
             transition={{ delay: 0.6 }}
             className="mt-8 px-5 py-2 border border-white/25 rounded-full text-white text-sm backdrop-blur-md"
           >
-            Industry Results • 200M+ Views Generated
+            Trusted by Forward - Thinking Brands
           </motion.div>
 
         </div>
 
         {/* Bottom Label */}
         <div className="absolute bottom-6 left-0 right-0 flex justify-center text-white/70 text-sm">
-          Trusted by 150+ Global Enterprises
+          Trusted by Various Brands
         </div>
 
       </div>

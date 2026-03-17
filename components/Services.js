@@ -2,7 +2,7 @@ const services = [
   {
     title: "3D Animation & Product Visualization",
     desc: "High-quality 3D animations that showcase products in a cinematic and engaging way.",
-    tags: ["Product launches", "E-commerce ads", "Social media campaigns", "Website visuals"],
+    tags: ["Product launches", "E-commerce ads", "Social media campaigns"],
   },
   {
     title: "CGI Advertising",
@@ -39,6 +39,12 @@ const services = [
     desc: "Data-driven advertising campaigns to increase leads and sales.",
     tags: ["Audience targeting", "Ad creative strategy", "Conversion tracking"],
   },
+    {
+    title: "Website Creation",
+    desc: "Premium, responsive websites with cinematic UI, agency-level branding, and seamless deployment.",
+    tags: ["Custom design", "Responsive layouts", "SEO optimization", "Domain & hosting setup"],
+  },
+
 ];
 
 export default function ServicesSection() {

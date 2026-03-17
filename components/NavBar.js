@@ -59,8 +59,8 @@ export default function Navbar() {
           <Image
             src="/logo.png"
             alt="RenderX Logo"
-            width={90}
-            height={28}
+            width={70}
+            height={22}
             className="object-contain"
             priority
           />

@@ -27,44 +27,46 @@ export default function HomeCGIShowcase() {
         </p>
       </div>
 
-      {/* Moving Videos Row */}
-      <motion.div
-        className="flex gap-6 px-6"
-        animate={{ x: ["0%", "-50%"] }}
-        transition={{
-          duration: 30,
-          ease: "linear",
-          repeat: Infinity,
-        }}
-      >
-        {[...videos, ...videos].map((video, index) => (
-          <div
-            key={index}
-            className="min-w-[220px] h-[390px] rounded-xl overflow-hidden bg-black shadow-lg hover:scale-105 transition"
-          >
-            {video.includes("youtube.com") ? (
-              <iframe
-                src={video}
-                title="YouTube video player"
-                frameBorder="0"
-                allow="autoplay; fullscreen; encrypted-media"
-                allowFullScreen
-                className="w-full h-full rounded-xl"
-              ></iframe>
-            ) : (
-              <video
-                src={video}
-                autoPlay
-                muted
-                loop
-                playsInline
-                preload="none"
-                className="w-full h-full object-cover rounded-xl"
-              />
-            )}
-          </div>
-        ))}
-      </motion.div>
+      {/* Moving Videos Row with manual scroll */}
+      <div className="overflow-x-auto scrollbar-hide">
+        <motion.div
+          className="flex gap-6 px-6"
+          animate={{ x: ["0%", "-50%"] }}
+          transition={{
+            duration: 30,
+            ease: "linear",
+            repeat: Infinity,
+          }}
+        >
+          {[...videos, ...videos].map((video, index) => (
+            <div
+              key={index}
+              className="min-w-[220px] h-[390px] rounded-xl overflow-hidden bg-black shadow-lg hover:scale-105 transition"
+            >
+              {video.includes("youtube.com") ? (
+                <iframe
+                  src={video}
+                  title="YouTube video player"
+                  frameBorder="0"
+                  allow="autoplay; fullscreen; encrypted-media"
+                  allowFullScreen
+                  className="w-full h-full rounded-xl"
+                ></iframe>
+              ) : (
+                <video
+                  src={video}
+                  autoPlay
+                  muted
+                  loop
+                  playsInline
+                  preload="none"
+                  className="w-full h-full object-cover rounded-xl"
+                />
+              )}
+            </div>
+          ))}
+        </motion.div>
+      </div>
 
       {/* View More Button */}
       <div className="flex justify-center mt-16">

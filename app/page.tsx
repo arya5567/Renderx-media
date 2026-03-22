@@ -14,7 +14,7 @@ import HeroSection from "@/components/herion";
 export default function Home() {
   return (
     <main>
-      <HeroSection/>
+     
       <Hero />
       <LogoMarquee/>
        <VideoMarquee/>

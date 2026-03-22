@@ -9,17 +9,18 @@ import VideoMarquee from "@/components/VideoMarquee.js";
 import ProcessSection from "../components/process.js";
 import WhyChooseUs from "../components/whychooseus";
 import VisionSection from "../components/vision.js";
+import LogoMarquee from "@/components/LogoMarquee";
+import HeroSection from "@/components/herion";
 export default function Home() {
   return (
     <main>
+      <HeroSection/>
       <Hero />
+      <LogoMarquee/>
        <VideoMarquee/>
       <About />
       <Services />
       <ProcessSection/>
-      
-      <TrustedBy />
-      <WhyChooseUs/> 
       <VisionSection/> {/* 👈 new section */}
       <Contact />    
       <CTA /> 

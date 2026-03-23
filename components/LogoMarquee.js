@@ -14,8 +14,8 @@ const logos = [
   { name: "happily",     logo: "/happily.jpeg" },
   { name: "AAYCREATE",   logo: "/aaycreate logo.png" },
   { name: "neco",     logo: "/neco.jpeg" },
-  { name: "plays",     logo: "/plays.jpeg" },
-  { name: "sleep",     logo: "/sleep.jpeg" },
+  { name: "plays",     logo: "/plays.png" },
+  { name: "sleep",     logo: "/sleep.png" },
    { name: "global",     logo: "/global.png" }
 ];
 

@@ -1,18 +1,8 @@
 const services = [
   {
-    title: "3D Animation & Product Visualization",
-    desc: "High-quality 3D animations that showcase products in a cinematic and engaging way.",
-    tags: ["Product launches", "E-commerce ads", "Social media campaigns"],
-  },
-  {
-    title: "CGI Advertising",
-    desc: "Scroll-stopping CGI advertisements designed for modern brands and social media.",
-    tags: ["Instagram Reels", "Brand campaigns", "Product promotions", "Viral marketing content"],
-  },
-  {
-    title: "Visual Effects (VFX)",
-    desc: "Transform ordinary videos into cinematic visual experiences with professional VFX.",
-    tags: ["Commercial videos", "Brand films", "Promotional content"],
+    title: "3D Animation and CGI & VFX Advertising",
+    desc: "Scroll-stopping reels  advertisements designed for modern brands and social media.",
+    tags: ["Product launches", "Social Media Campaigns", "Viral Marketing Content"],
   },
   {
     title: "Video Editing",
@@ -30,14 +20,9 @@ const services = [
     tags: ["Content planning", "Post creation", "Audience engagement", "Growth strategies"],
   },
   {
-    title: "Google Ads Management",
+    title: "Google and Facebook Ads",
     desc: "High-converting Google Ads campaigns to bring targeted traffic.",
-    tags: ["Search Ads", "Display Ads", "YouTube Ads", "Performance tracking"],
-  },
-  {
-    title: "Facebook & Instagram Ads",
-    desc: "Data-driven advertising campaigns to increase leads and sales.",
-    tags: ["Audience targeting", "Ad creative strategy", "Conversion tracking"],
+    tags: ["Audience targeting", "Ad creative strategy", "Conversion tracking","Performance tracking"],
   },
     {
     title: "Website Creation",

@@ -66,9 +66,7 @@ export default function HeroSection() {
         </div>
 
         {/* Bottom Label */}
-        <div className="absolute bottom-6 left-0 right-0 flex justify-center text-white/70 text-sm">
-          Trusted by Various Brands
-        </div>
+        
 
       </div>
 
